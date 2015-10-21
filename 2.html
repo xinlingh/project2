@@ -1,94 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>test file...</title>
+<meta charset="utf-8">
+<style>
+     @import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400);
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100% !important;
+  font-family: Futura, Helvetica, Arialsans-serif;
+  background: #eee url("https://m2.behance.net/rendition/pm/27749331/max_1200/67f9d7e93520865d45166c3b91df946d.jpg") no-repeat fixed center center / cover;
+} 
+.holder{
+  height: 12%;
+}
+.container{
+  height: 100%;
+  width: 100%;
 
-	<style>
+  position: relative;
+}
 
-	html, body{
-		box-sizing:border-box;
-	}
+.container h1{
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  font-weight: 400;
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  color: black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  margin-top: 30px;
+  margin-left: -10px;
+}
 
-	*
-	{
-		box-sizing: inherit;}
-	span{
-		background-color: green;
-		padding-bottom:24px;
-		padding-left: 24px;
-	}
+.color{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.color.first{
+  background-color: #3e3a39;
+}
+.color.second{
+  background-color: #727171;
 
-	html, body, h1, h2, h3{
-		padding:0;
-		margin:0;
+}
+.color.third{
+  background-color: #9fa0a0;
+}
+.color.fourth{
+  background-color: #c9caca;
+}
+.color.fifth{
+  background-color: #efefef;
+}
 
-	}
-
-/*-static, relative, absolute, fixed-*/
-	.container{
-		position:relative;
-		top:20px;
-        border:5px solid grey;
-        min-width: 600px;
-    }
-
-	.header{background-color: orange;
-		border:10px double black;
-		padding:10;}
-
-	h1,h2{
-		padding:10px;
-	}
+.color.sixth{
+  background-color: #efefef;
+}
 
 
-
-	nav{
-		padding:12px;
-		margin:0;
-		background-color: green;}
-
-		
- nav li{
- 	display:inline;
- 	padding-right: 20px;
- 	text-transform: uppercase;
- 	font-family: sans-serif;
- 	letter-spacing:2px;
-
- }
+footer#colophon{
+	background: black;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	font-weight: 100;
 	
-		
+}
+.socialnet{
 
+  text-align: center;
+  background: transparent;
+  height: 20px;
+  padding: 200px 0;
+}
+.socialnet h4 {
+  margin: 40px auto 90px auto;
+  color: white;
+  font-size: 1.9em;
+  font-weight: 100;
+}
+.socialnet div {
+  margin: 60px auto;
+}
+.socialnet a {
+  padding: 23px 32px 24px 32px;
+  border-radius: 100px;
+  margin: 0 20px;
+  opacity: .5;
+  
+}
+.twitter {
+  background: transparent url("http://vitor.cc/img/social/twitter.png") center no-repeat;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+.facebook {
+  background: transparent url("http://vitor.cc/img/social/facebook.png") center no-repeat;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
 
-	</style>
+.mail {
+  background: transparent url("http://vitor.cc/img/social/paperplane.png") center no-repeat;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+.text-holder{
+  width: 100%;
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #000;
+  position: relative;
+}  
+.text-holder p{
+  font-size:  .7em;
+  width: 100%;
+  max-width: 450px;
+
+}
+.text-holder img{
+ 
+}
+.text-holder h2{
+  font-weight: 400;
+}
+.wrap{
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>
 </head>
-
 <body>
+	<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
 <div class="container">
 
-	<div class="header">
-		<h1>my website</h1>
-		<h2>this is my website</h2>
-	</div>
-<nav>
-	<ul>
-		<li>home</li>
-		<li>about</li>
-		<li>work</li>
-	</ul>
-</nav>	
-
-
-
-<div class="post">
-<h2>title of my blog post</h2>
-<p>
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>Lorem Ipsum</span> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-</div>
+  <h1 data-0="top: 0%;" data-900="top: -100%;">Scroll</h1>
+  <div class="holder">
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color first">one</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color second">two</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color third">three</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color fourth">foue</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color fifth"></div>
 </div>
 
+  <div class="wrap">
+    <div class="text-holder">
+      <h2>Creative</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum, vero non reprehenderit. Accusamus tenetur.</p>
+      <img src="http://placehold.it/300x300" alt="" />
+      <img src="http://placehold.it/300x300" alt="" />
+      <img src="http://placehold.it/300x300" alt="" />
+      <img src="http://placehold.it/300x300" alt="" />
+      <img src="http://placehold.it/300x300" alt="" />
+      <img src="http://placehold.it/300x300" alt="" />
+    </div>
+  </div>
 
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<section class="socialnet">
+	      <h4>Next dream.</h4>
+	      <div>
+	        <a class="twitter" href="#" target="_blank"></a>
+	        <a class="facebook" href="#" target="_blank"></a>
+	        <a class="mail" href="#" target="_blank"></a>
+	      </div>
+	</section>
+</footer>
+
+<script type="text/javascript">
+	var s = skrollr.init();
+</script>
 </body>
 </html>
