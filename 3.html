@@ -1,44 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <style> 
-body {
-		margin: 10;
-	}
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400);
+body, html{
+padding: 0;
+  margin: 0;
+  height: 100% !important;
+  font-family: Futura, Helvetica, Arialsans-serif;}
 
-	p {
+.holder{
+  height: 12%;}
+
+  .container{
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+
+ h1{
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  font-weight: 400;
+  font-size:21px; 
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  
+  color: black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.color{
+  width: 16%;
+  height: 80%;
+  float: left;
+}
+.color.first{
+  background-color: #3e3a39;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.second{
+  background-color: #727171;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.third{
+  background-color: #9fa0a0;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fourth{
+  background-color: #c9caca;
+    padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fifth{
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.sixth{
+  background-color: #f4f4f4;
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+
+
+p {
 		text-align: center;
-		font-family: sans-serif;
+		font-family: Futura, Helvetica, Arialsans-serif;
 		font-size: 18px;
+		font-weight:100;
+		width:400px;
+		margin:0 auto;
+		padding-top: 30px;
+
+
 	}
 
 	.beach {
 		height: 400px;
-		background:url("http://i62.tinypic.com/zj6m15.jpg") no-repeat center top fixed; 
+		background:url("https://m2.behance.net/rendition/pm/27939457/disp/e86adb067b81122ba11fd66e5a905b77.jpg") no-repeat center top fixed; 
 	  background-size: cover;
 		margin-top: 30px;
 	}
 
-	.beach:first-child {
-		margin-top: 0;
-	}
 
+li{
+	display:inline;
+	font-weight:100;
+	width:400px;
+	margin: 20px;
+	border-bottom:0px solid black;
+	padding-bottom:5px;
+}
+
+.footer{
+padding-top: 30px;
+padding-bottom:30px;
+font-weight:100;
+text-align: center;
+font-family: Futura, Helvetica, Arialsans-serif;
+font-size: 18px
+}
+	
+a{
+  color: black;}
+
+a:hover{font-style: oblique;
+       }
 
 
 </style>
 </head>
+
+
+
 <body>
-		<div class="beach"><p>first div!</p>
+
+
+		<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+<div class="container">
+
+  <h1 data-0="top: 0%;" data-900="top: -100%;">Share your dream</h1>
+  <div class="holder">
+  <div data-0="margin-top: 0%;" data-900="margin-top: -70%;" class="color first">HORROR <br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -60%;" class="color second">STRESSFUL<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -50%;" class="color third">CONFUSED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -40%;" class="color fourth">HAPPY<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -30%;" class="color fifth">RELAXED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color sixth"></div>
+</div>
+
+
+	<div class="beach"><p>It began with a swim in the ocean.</p>
 	</div>
 
-	<div><p>middle space</p></div>
+	<div><p>Suddenly I realized that she had gone much farther away from shore than she expected and, to her great dismay, there was a pair of killer whales swimming toward her. </p></div>
 
-	<div class="beach"><p>second div!</p>
+	<div class="beach"><p>The whales circled around her several times while she did her best not to panic.</p>
 	</div>
 
-	<div><p>middle space</p></div>
+	<div><p>After several minutes of playful dives and underwater acrobatics, the whales swam away just as suddenly as they had appeared. </p></div>
 
-	<div class="beach"><p>third div!</p>
+	<div class="beach"><p>What happened next was terrifying. The ocean swelled up, curled over, and slammed me back onto the beach.</p>
 	</div>
+
+    <div class="footer">
+    <ul>
+	<li><a href="4.html">Go Back</a></li>
+	<li><a href="index.html">Wake Up</a></li>
+	<li><a href="blank">Continue</a></li>
+    </ul>
+    </div>
+
+
+
+<script type="text/javascript">
+var s = skrollr.init();
+</script>
 </body>
 </html>
