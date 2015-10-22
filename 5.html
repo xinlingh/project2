@@ -1,33 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <style> 
-.fixed-bg {
-    background-image:url("https://m2.behance.net/rendition/pm/25270953/disp/4212ffed208cce5aa41d308d60af3c18.jpg");
-    min-height: 1200px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: ;
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400);
+body, html{
+padding: 0;
+  margin: 0;
+  height: 100% !important;
+  color:black;
+  font-family: Futura, Helvetica, Arialsans-serif;
 }
 
-.text{
-	background-color: black;
-	opacity:0.4;
+.holder{
+  height: 12%;
 }
+
+  .container{
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+
+ h1{
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  font-weight: 400;
+  font-size:21px; 
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  
+  color: black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.color{
+  
+  width: 16%;
+  height: 80%;
+  float: left;
+}
+.color.first{
+  background-color: #3e3a39;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.second{
+  background-color: #727171;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.third{
+  background-color: #9fa0a0;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fourth{
+  background-color: #c9caca;
+    padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fifth{
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.sixth{
+  background-color: #f4f4f4;
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+img{display:block;
+     margin:0 auto;
+ padding:20px;}
+
+.photo{padding:20px;}
+
+.text{margin:0 auto;
+	  font-size:16px;
+	  text-align:center;
+      width:60%;
+      padding-top: 40px;}
+
+
+li{
+  display:inline;
+  font-weight:100;
+  width:400px;
+  margin: 20px;
+  border-bottom:0px solid black;
+  padding-bottom:5px;
+}
+
+.footer{
+padding-top: 30px;
+padding-bottom:30px;
+font-weight:100;
+text-align: center;
+font-family: Futura, Helvetica, Arialsans-serif;
+font-size: 18px
+}
+  
+a{
+  color: black;}
+
+a:hover{font-style: oblique;
+       }      
+
 </style>
 </head>
 <body>
-<div class="text">
-<p>In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.
-In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.
-In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.
-In this example, we have created a fixed background image that will disappear slowly on scroll. Scroll the page to see the effect. <strong>Note:</strong> Try to remove the background-attachment property to really understand this example.</p>
+
+<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+<div class="container">
+
+  <h1 data-0="top: 0%;" data-900="top: -100%;">Share your dream</h1>
+  <div class="holder">
+  <div data-0="margin-top: 0%;" data-900="margin-top: -70%;" class="color first">HORROR <br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -60%;" class="color second">STRESSFUL<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -50%;" class="color third">CONFUSED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -40%;" class="color fourth">HAPPY<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -30%;" class="color fifth">RELAXED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color sixth"></div>
 </div>
- 
-<div class="fixed-bg"></div>
 
-<div style="height:800px;background-color:yellow;">This div is only here to enable scrolling (height = 800 pixels).</div>
+<p class="text">White surrounds me as I make my way through the trees. I see a frozen waterfall with icicles pointing outwards from it. The waterfall isn't too tall but it is tall enough to fall and hurt yourself just with the impact of the water. The ice is thin enough you can see the fish swimming underneath. </p>
 
+<div class="photo">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3364818100489.560b73bc0504c.jpg">
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4cf6908100489.560b73be1ecd9.jpg">
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f2a8b78100489.560b73cc4d137.jpg">
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/10f7e98100489.560b73293644e.jpg">
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1b95c78100489.560b73bd2f0a3.jpg">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9eed7c8100489.560b73bda0b2e.jpg">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8390e28100489.560b73298a2de.jpg">
+
+<p class="text">I see a young boy, a different boy hanging from one of the icicles for his life. If he falls, he goes under. I stand on the waterfall and kneel down. I reach down with my hand to try to help the boy as the ice below my knees starts to crack. My perspective shifts once again. I go back to the woman who is standing in front of a small door with a doorman dressed in green. While the doorman is distracted, I enter the place. It is a small hotel with bellhops and people dress in fur and fine clothing moving from door to door. I enter a room. It is completely velvet, the walls, the floor, the bed are all velvet. I look at the bed and see the same chubby boy sitting in the bed smiling at me. When the manager comes, I hide under the bed in fear of being thrown out. He passes by and doesn't see me but a bellhop does. He pulls me up and through the lobby. He whispers how I am dirty, poor, thief, and how I will never change. He throws me out on the street and that is all I can remember.
+</p>
+</div>
+
+    <div class="footer">
+    <ul>
+  <li><a href="4.html">Go Back</a></li>
+  <li><a href="index.html">Wake Up</a></li>
+  <li><a href="3.html">Continue</a></li>
+    </ul>
+    </div>
+<script type="text/javascript">
+var s = skrollr.init();
+</script>
 </body>
 </html>
