@@ -2,11 +2,221 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <style>
+ @import url(http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400);
+body, html{
+  padding: 0;
+  margin: 0;
+  height: 100% !important;
+  font-family: Futura, Helvetica, Arialsans-serif;
+
+} 
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e71e920253771.562e8507c86b6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+}
+
+.holder{
+  height: 12%;
+}
+.container{
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+
+h1{
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  font-weight: 400;
+  font-size:21px; 
+  font-family:Futura, Helvetica, Arial, sans-serif;
+  
+  color: black;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+.color{
+  width: 16%;
+  height: 80%;
+  float: left;
+}
+.color.first{
+  background-color: #3e3a39;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.second{
+  background-color: #727171;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.third{
+  background-color: #9fa0a0;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fourth{
+  background-color: #c9caca;
+    padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.color.fifth{
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.color.sixth{
+  background-color: white;
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.image{width:1150px;
+	margin:0 auto;}
+#image1{
+      
+       position:absolute;
+       margin-top:100px;
+       margin-left: 400px}
+#image0{
+       
+       position:absolute;
+       margin-top:50px;
+       margin-left: 100px}
+#image2{position:absolute;
+       margin-top:400px;
+       margin-left: 760px}
+
+.content{max-width: 300px;
+	position:relative;
+         margin-top:400px;
+         margin-left: 90px}
+
+.content2{width: 300px;
+	position:absolute;
+         margin-top:-300px;
+         margin-left:740px
+
+  }
+
+li{
+	display:inline;
+	font-weight:100;
+	width:400px;
+	margin: 20px;
+	border-bottom:0px solid black;
+	
+}
+
+.footer{
+	margin:0 auto;
+border-bottom:px solid red;
+position:relative;
+float:right;
+font-weight:100;
+text-align: center;
+font-family: Futura, Helvetica, Arialsans-serif;
+font-size: 18px
+
+}
+	
+a{
+  color: black;}
+
+a:hover{font-style: oblique;
+       }
+
 </style>
 </head>
 <body>
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d0605d20253771.562e84fdc567d.gif">
+<script type="text/javascript" src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
+<div id="background"></div>
+
+<div class="container">
+
+  <h1 data-0="top: 0%;" data-900="top: -100%;">Share your dream</h1>
+  <div class="holder">
+  <div data-0="margin-top: 0%;" data-900="margin-top: -70%;" class="color first">HORROR <br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -60%;" class="color second">STRESSFUL<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -50%;" class="color third">CONFUSED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -40%;" class="color fourth">HAPPY<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -30%;" class="color fifth">RELAXED<br>DREAM</div>
+  <div data-0="margin-top: 0%;" data-900="margin-top: -20%;" class="color sixth"></div>
+</div>
+
+<div class="image">
+<div id="image0">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/45ba3120253771.562e8506b922c.jpg" width="280px">	
+</div>
+<div id="image1">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d0605d20253771.562e84fdc567d.gif"  width="340px">
+</div>
+<div id="image2">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f6af0020253771.562e84fe0d26b.jpg"  width="280px">
+</div>
+
+<div class="footer">
+    <ul>
+	<li><a href="5.html">Go Back</a></li>
+	<li><a href="index.html">Wake Up</a></li>
+	<li><a href="blank">Continue</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="content">
+<p>this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go</p>
+<div>
+
+<div class="content2">
+<p>this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go
+this is a place you will never go</p>
+<div>
+
+
+
+<script type="text/javascript">
+	var s = skrollr.init();
+</script>
 
 
 
